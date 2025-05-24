@@ -10,8 +10,8 @@ export class Tab2Page {
 
     // Variables
   usuario: string = '';
-  nombre: string = '';
-  apellidos: string = '';
+  contrasena: string = '';
+
 
   mostrarMensaje: boolean = true; // mostramos mensaje intro
   
@@ -20,8 +20,7 @@ export class Tab2Page {
     // Funciones que se ejecuta al enviar el formulario
   capturarDatos() {
     console.log('Usuario:', this.usuario);
-    console.log('Nombre:', this.nombre);
-    console.log('Apellidos:', this.apellidos);
+    console.log('Contraseña:', this.contrasena);
     
     // Aquí hacemos las validaciones 
     this.mostrarMensaje = false; // Ocultamos el mensaje al iniciar sesion
