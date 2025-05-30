@@ -1,0 +1,23 @@
+
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Skeleton APP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <h2>Bienvenido</h2>
+
+  <ion-item>
+    <ion-label position="floating">Usuario</ion-label>
+    <ion-input [(ngModel)]="usuario" type="text" required></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Contraseña</ion-label>
+    <ion-input [(ngModel)]="contrasena" type="password" required></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="ingresar()">Ingresar</ion-button>
+  <ion-text color="medium"><p><a href="#">Crear una cuenta</a></p></ion-text>
+</ion-content>
